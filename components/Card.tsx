@@ -4,7 +4,7 @@ import React from "react";
 
 const Card = ({ isHighlighted }: { isHighlighted: boolean }) => {
   return (
-    <div className={`max-w-[200px] border-4 border-solid rounded-2xl border-zinc-800  my-10 sm:px-5 px-2 ${isHighlighted ? "shadow-2xl drop-shadow-2xl scale-150 z-10" : ""}`}>
+    <div className={`max-w-[220px] border-4 border-solid rounded-2xl border-zinc-800  my-10 sm:px-5 px-2 ${isHighlighted ? "shadow-2xl drop-shadow-2xl scale-[1.18] relative -top-5  z-10" : ""}`}>
       <div className="flex items-center justify-center py-3 border-b-2 border-zinc-800">
         <a href="#">
           <Image
