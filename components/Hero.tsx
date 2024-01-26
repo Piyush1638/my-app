@@ -2,7 +2,7 @@
 
 const Hero = () => {
     return (
-      <div className="flex flex-col items-stretch sm:px-5 mb-20">
+      <div className="flex flex-col items-stretch sm:px-5 mb-20 mt-24">
         <div className="text-zinc-50 mf:text-5xl font-medium leading-[63.7px] w-full max-md:max-w-full max-md:text-3xl">
           Choose Mint Car{" "}
         </div>

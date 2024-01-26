@@ -35,7 +35,8 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className="mf:flex hidden justify-between gap-5 self-start items-start max-md:max-w-full max-md:flex-wrap">
+
+        <div className="mf:flex  hidden justify-between gap-5 self-start items-start max-md:max-w-full max-md:flex-wrap">
           <div className="items-stretch flex justify-between gap-5 px-5">
             <div className="text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5">
               Mint NFT
@@ -67,9 +68,9 @@ const Navbar = () => {
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1550055fbae609e16280a87fd2fbd1f6cb68ac608377c54f7130fc7da0b651f?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"
                   className="aspect-square object-contain object-center w-6 overflow-hidden shrink-0 max-w-full"
                 />
-                <div className="text-neutral-900 text-base font-medium leading-6 grow whitespace-nowrap self-start">
+                <button className="text-neutral-900 text-base font-medium leading-6 grow whitespace-nowrap self-start">
                   Connect Wallet
-                </div>
+                </button>
               </div>
               <img
                 loading="lazy"
@@ -88,9 +89,9 @@ const Navbar = () => {
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1550055fbae609e16280a87fd2fbd1f6cb68ac608377c54f7130fc7da0b651f?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"
             className="aspect-square object-contain object-center w-6 overflow-hidden shrink-0 max-w-full"
           />
-          <div className="text-neutral-900 text-xs font-normal leading-6  whitespace-nowrap self-start">
+          <button className="text-neutral-900 text-xs font-normal leading-6  whitespace-nowrap self-start">
             Connect Wallet
-          </div>
+          </button>
         </div>
       </div>
       {openMenu && (
