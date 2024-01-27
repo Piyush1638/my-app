@@ -1,6 +1,6 @@
 "use client";
 import * as React from "react";
-import Card from "@/components/Card";
+import CarouselCard from "./CarouselCard";
 import {
   Carousel,
   CarouselApi,
@@ -15,7 +15,7 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
 
   const TWEEN_FACTOR = 4.2
 
-export function HeroCarousel() {
+export default function CarOwnerCarousel({callFrom}:{callFrom: string}) {
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
   const [tweenValues, setTweenValues] = React.useState<number[]>([])
@@ -80,20 +80,20 @@ export function HeroCarousel() {
       >
       <CarouselContent>
         {Array.from({ length: 10 }).map((_, index) => (
-          <CarouselItem key={index} className="md:basis-1/3  xl:basis-1/5 py-10"
+          <CarouselItem key={index} className="md:basis-1/3  xl:basis-1/3 py-10"
           style={{
             ...(tweenValues.length && { opacity: tweenValues[index] })
           }}
           >
-            <Card isHighlighted={current === index} />
+            <CarouselCard isHighlighted={current === index} callFrom={callFrom}/>
           </CarouselItem>
         ))}
       </CarouselContent>
 
       <CarouselPrevious 
-      className="bg-[#424242] hover:bg-primary"
+      className="bg-zinc-900  hover:bg-primary"
       />
-      <CarouselNext className="bg-[#424242]"/>
+      <CarouselNext className="bg-zinc-900 "/>
     </Carousel>
         </div>
   );
