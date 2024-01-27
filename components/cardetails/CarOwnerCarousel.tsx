@@ -61,7 +61,7 @@ export default function CarOwnerCarousel({callFrom}:{callFrom: string}) {
 
   return (
     <div
-    className="mx-14 "
+    className="sm:mx-14 mx-3"
     >
 
     <Carousel
@@ -80,7 +80,7 @@ export default function CarOwnerCarousel({callFrom}:{callFrom: string}) {
       >
       <CarouselContent>
         {Array.from({ length: 10 }).map((_, index) => (
-          <CarouselItem key={index} className="md:basis-1/3  xl:basis-1/3 py-10"
+          <CarouselItem key={index} className="md:basis-1/3 basis-1/3  xl:basis-1/3 py-10"
           style={{
             ...(tweenValues.length && { opacity: tweenValues[index] })
           }}
