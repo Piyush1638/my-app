@@ -1,8 +1,9 @@
-import CarCarousel from "@/components/cardetails/CarCarousel"
-import ListOfNft from "@/components/cardetails/ListOfNft"
-import MonthlyRent from "@/components/cardetails/MonthlyRent"
-import NameDropDown from "@/components/cardetails/NameDropDown"
-import NftCarOwner from "@/components/cardetails/NftCarOwner"
+import CarCarousel from "@/components/cardetails/CarCarousel";
+import Dialog from "@/components/cardetails/Dialog";
+import ListOfNft from "@/components/cardetails/ListOfNft";
+import MonthlyRent from "@/components/cardetails/MonthlyRent";
+import NameDropDown from "@/components/cardetails/NameDropDown";
+import NftCarOwner from "@/components/cardetails/NftCarOwner";
 
 const page = () => {
   return (
@@ -11,19 +12,25 @@ const page = () => {
         <p className="text-slate-500">Home {">"} Mint NFT</p>
       </div>
       <div className="flex items-center justify-between px-3 mf:p-6 ">
-        <NameDropDown/>
+        <NameDropDown />
       </div>
-      <div className="relative mt-20">
-        <CarCarousel/>
+      {/* <div className="md:w-1/2  bg-primary max-h-[400px] overflow-y-auto z-10 absolute rounded-lg"><Dialog/></div> */}
+      <div className="relative mt-20 mb-32">
+        <CarCarousel />
       </div>
-      <div className="grid sm:grid-cols-2 mf:grid-cols-3 grid-cols-1 mt-20 gap-5">
-        <MonthlyRent/>
-        <NftCarOwner/>
-        <ListOfNft/>
-      </div>
-      
-    </section>
-  )
-}
 
-export default page
+      <div className="mf:hidden flex flex-row justify-between gap-2">
+        <h1 className="text-2xl text-slate-50">$150.000</h1>
+        <h3 className="text-gray-400 text-base">+$445.8900 Fees</h3>
+      </div>
+
+      <div className="grid  mf:grid-cols-3 grid-cols-1 mt-16 mf:mt-20 gap-5 md:overflow-y-hidden">
+        <MonthlyRent />
+        <NftCarOwner />
+        <ListOfNft />
+      </div>
+    </section>
+  );
+};
+
+export default page;

@@ -2,7 +2,7 @@ import React from "react";
 
 const MonthlyRent = () => {
   return (
-    <div className="bg-[#262729] flex-col rounded-tr-2xl rounded-tl-2xl w-full px-10 pb-10 pt-6 max-h-[300px]">
+    <div className="bg-[#262729] flex-col rounded-tr-2xl rounded-tl-2xl w-full px-10 pb-10 pt-6 mf:relative mf:top-32">
       <header className="flex items-center justify-between w-full">
         <h1 className="text-slate-50 font-semibold md:text-lg text-xs">
           NFT Monthly Rent

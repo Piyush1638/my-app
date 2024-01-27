@@ -24,7 +24,7 @@ const CarouselCard = ({ isHighlighted, callFrom }: { isHighlighted: boolean, cal
             </div>
           </div>
         )}
-        <Link href="#">
+        <Link href="#" className="flex items-center justify-center">
           <Image
             src="/assets/images/wheel.svg"
             alt="car"
@@ -32,7 +32,7 @@ const CarouselCard = ({ isHighlighted, callFrom }: { isHighlighted: boolean, cal
             width={200}
           />
         </Link>
-        <p className="text-slate-50 text-xs">Zolls spyder Roder - 1%</p>
+        <p className="text-slate-50 text-xs text-center mt-4">Zolls spyder Roder - 1%</p>
       </div>
     </div>
   );

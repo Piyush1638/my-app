@@ -6,7 +6,7 @@ import { TiShoppingCart } from "react-icons/ti";
 
 const NftCarOwner = () => {
   return (
-    <div className="bg-[#2e2f32] flex-col rounded-tr-2xl rounded-tl-2xl w-full px-10 pb-10 pt-6">
+    <div className="bg-[#2e2f32] flex-col rounded-tr-2xl rounded-tl-2xl rounded-bl-2xl mf:rounded-bl-none  rounded-br-2xl mf:rounded-br-none w-full px-10 pb-10 pt-6 mb-10 mf:mb-0">
       <header className="flex items-center justify-between w-full">
         <h1 className="text-slate-50 font-semibold md:text-lg text-xs">
           NFT Car Owner
