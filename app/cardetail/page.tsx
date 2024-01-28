@@ -1,5 +1,5 @@
+import CalculatorDialog from "@/components/cardetails/CalculatorDialog";
 import CarCarousel from "@/components/cardetails/CarCarousel";
-import Dialog from "@/components/cardetails/Dialog";
 import ListOfNft from "@/components/cardetails/ListOfNft";
 import MonthlyRent from "@/components/cardetails/MonthlyRent";
 import NameDropDown from "@/components/cardetails/NameDropDown";
@@ -25,7 +25,7 @@ const page = () => {
       </div>
 
       <div className="grid  mf:grid-cols-3 grid-cols-1 mt-16 mf:mt-20 gap-5 md:overflow-y-hidden">
-        <MonthlyRent />
+        <CalculatorDialog />
         <NftCarOwner />
         <ListOfNft />
       </div>
