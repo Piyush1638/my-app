@@ -1,5 +1,6 @@
 import CalculatorDialog from "@/components/cardetails/CalculatorDialog";
 import CarCarousel from "@/components/cardetails/CarCarousel";
+import InvestmentConfirmationDialog from "@/components/cardetails/InvestmentConfirmationDialog";
 import ListOfNft from "@/components/cardetails/ListOfNft";
 import MonthlyRent from "@/components/cardetails/MonthlyRent";
 import NameDropDown from "@/components/cardetails/NameDropDown";
@@ -18,6 +19,8 @@ const page = () => {
       <div className="relative mt-20 mb-32">
         <CarCarousel />
       </div>
+
+      <InvestmentConfirmationDialog/>
 
       <div className="mf:hidden flex flex-row justify-between gap-2">
         <h1 className="text-2xl text-slate-50">$150.000</h1>
