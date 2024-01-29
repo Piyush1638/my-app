@@ -1,0 +1,67 @@
+const MyNFT = () => {
+  return (
+    <div className="flex flex-col py-3 rounded-lg bg-neutral-800 px-3">
+      <div className="text-white text-base font-bold leading-6 whitespace-nowrap">
+        My NFTs
+      </div>
+      <div className="text-slate-500 text-sm leading-5 whitespace-nowrap mt-1">
+        Here is the list of all your Hulk Cars NFTs
+      </div>
+      <div className="grid grid-cols-3 gap-2.5 mt-2 pr-1.5">
+        {myNFTs.map((nft, index) => (
+          <div key={index} className="items-stretch flex flex-col px-5 flex-1">
+            <img
+              loading="lazy"
+              srcSet={nft.srcSet}
+              className="aspect-[1.01] object-contain object-center w-[84px] self-center"
+            />
+            <p className="text-zinc-50 text-center text-xs leading-4 mt-4">
+              {nft.name}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default MyNFT;
+
+const myNFTs = [
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+  {
+    srcSet: "/assets/dashboard/carwheel.png",
+    name: "Zoll Rs Spyder Roder - 0.10%",
+  },
+];
