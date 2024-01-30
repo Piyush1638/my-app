@@ -33,7 +33,8 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       colors:{
-        "primary": "#1d1e21",
+        "primary": "#E5E5E5",
+        "dark-primary": "#1d1e21",
         "navlinks": "#2a2b2d",
       },
       screens:{

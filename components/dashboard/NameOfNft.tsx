@@ -2,7 +2,7 @@ import React from "react";
 
 const NameOfNft = () => {
   return (
-    <div className="bg-neutral-800 flex gap-3 px-5 py-5 rounded-xl items-start">
+    <div className="bg-[#1D1F25] flex gap-3 px-5 py-5 rounded-xl items-start">
       <img
         loading="lazy"
         srcSet="/assets/images/logo.png"

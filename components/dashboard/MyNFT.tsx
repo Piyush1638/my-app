@@ -1,6 +1,6 @@
 const MyNFT = () => {
   return (
-    <div className="flex flex-col py-3 rounded-lg bg-neutral-800 px-3">
+    <div className="flex flex-col py-3 xl:py-6 xl:px-5 rounded-lg bg-[#1D1F25] px-3">
       <div className="text-white text-base font-bold leading-6 whitespace-nowrap">
         My NFTs
       </div>

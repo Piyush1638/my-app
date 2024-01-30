@@ -18,7 +18,7 @@ const CalculatorDialog = () => {
       <DialogTrigger>
         <MonthlyRent />
       </DialogTrigger>
-      <DialogContent className="bg-primary border-none">
+      <DialogContent className="bg-primary dark:bg-dark-primary border-none">
         <DialogHeader>
           <DialogTitle className="text-slate-50 text-start">
             Calculator

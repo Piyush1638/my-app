@@ -91,7 +91,7 @@ export default function CarOwnerCarousel({callFrom}:{callFrom: string}) {
       </CarouselContent>
 
       <CarouselPrevious 
-      className="bg-zinc-900  hover:bg-primary"
+      className="bg-zinc-900  hover:bg-primary dark:hover:bg-dark-primary"
       />
       <CarouselNext className="bg-zinc-900 "/>
     </Carousel>

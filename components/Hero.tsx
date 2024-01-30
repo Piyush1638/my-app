@@ -12,7 +12,7 @@ const Hero = () => {
             <div className="items-stretch flex grow flex-col mt-1 max-md:mt-10">
               <div className="items-stretch flex justify-between gap-4 max-md:hidden">
                 <Image
-                  src="/assets/logo-porsche 1.png"
+                  src="/assets/logo-porsche.png"
                   width={40}
                   height={62}
                   alt="Car"

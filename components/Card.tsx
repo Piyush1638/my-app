@@ -25,7 +25,7 @@ const Card = ({ isHighlighted }: { isHighlighted: boolean }) => {
         </div>
         {isHighlighted && (
           <Link
-            href="/"
+            href="/cardetail"
             className=" flex items-center justify-center border border-slate-500 rounded-md py-2 my-2 text-slate-500 "
           >
             View Car
