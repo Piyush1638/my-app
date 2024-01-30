@@ -85,7 +85,9 @@ export function HeroCarousel() {
             ...(tweenValues.length && { opacity: tweenValues[index] })
           }}
           >
-            <Card isHighlighted={current === index} />
+            <Card isHighlighted={current === index} 
+            soldOut={  index === 3}
+            />
           </CarouselItem>
         ))}
       </CarouselContent>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import SoldOutIcon from "./cardetails/SoldOutIcon";
 
 const Hero = () => {
   return (
@@ -47,13 +48,26 @@ const Hero = () => {
               </div>
             </div>
 
-            <Image
+            <div
+            className="relative"
+            >
+              <Image
               src="/assets/car.png"
               width={884}
               height={240}
               alt="Car"
               className="aspect-[3.7] object-contain object-center w-full overflow-hidden self-stretch my-auto max-md:max-w-full max-md:mt-10"
             />
+
+            <div
+            className="absolute top-0 z-10 left-[15%] max-md:left-[80%]"
+            >
+              <SoldOutIcon />
+
+            </div>
+
+
+            </div>
           </div>
         </div>
       </div>

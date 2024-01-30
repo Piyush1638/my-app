@@ -2,9 +2,28 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Card = ({ isHighlighted }: { isHighlighted: boolean }) => {
+const Card = ({
+  isHighlighted,
+  soldOut,
+}: {
+  isHighlighted: boolean;
+  soldOut?: boolean;
+}) => {
   return (
-  <div className={`max-w-[220px] border-4 border-solid rounded-2xl dark:border-[#2D2E31] border-[#CFCFCF]  my-10 sm:px-5 px-2 ${isHighlighted ? "shadow-2xl drop-shadow-2xl scale-[1.18] relative -top-5  z-10" : ""} backdrop-filter backdrop-blur-md`}>
+    <div
+      className={`max-w-[220px] relative border-4 border-solid rounded-2xl dark:border-[#2D2E31] border-[#CFCFCF]  my-10 sm:px-5 px-2 ${
+        isHighlighted
+          ? "shadow-2xl drop-shadow-2xl scale-[1.18] relative -top-5  z-10"
+          : ""
+      } backdrop-filter backdrop-blur-md`}
+    >
+      {soldOut && (
+        <div className="absolute z-10 -top-4 left-[70px]">
+          <span className="text-white bg-red-500 px-3 py-1.5 rounded-full text-xs font-medium">
+            Sold out
+          </span>
+        </div>
+      )}
       <div className="flex items-center justify-center py-3 border-b-2 dark:border-[#424242] border-[#10141a1a]">
         <a href="#">
           <Image
@@ -21,7 +40,9 @@ const Card = ({ isHighlighted }: { isHighlighted: boolean }) => {
           <p className="text-center  text-sm dark:text-[#fff] text-[#10141A] font-semibold">
             Porsche Tagra-4
           </p>
-          <p className="text-center text-sm dark:text-[#868686] text-[#5B6169]">$150.00</p>
+          <p className="text-center text-sm dark:text-[#868686] text-[#5B6169]">
+            $150.00
+          </p>
         </div>
         {isHighlighted && (
           <Link

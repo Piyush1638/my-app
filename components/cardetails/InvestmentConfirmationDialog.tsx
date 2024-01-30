@@ -172,7 +172,7 @@ const SuccessfullyInvestedDiv = () => (
         </label>
       </div>
       <h1 className="text-3xl text-center font-semibold text-lime-400 my-4">
-        Successfully Invested
+        Successfully Invested 
       </h1>
       <p className="text-center text-slate-50">You Have Just Recieved Your NFT In Your Wallet On The Solana Network. You Can Sell Your NFT At Any Time On The Secondary market.</p>
     </div>
