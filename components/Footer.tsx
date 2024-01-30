@@ -62,7 +62,7 @@ const Footer = () => {
                 <div className="justify-center leading-[143%] mt-2.5">
                   Opensea
                 </div>
-                <div className="justify-center leading-[143%] mt-5">FAQ</div>
+                <Link href="/faq" className="justify-center leading-[143%] mt-5">FAQ</Link>
               </div>
             </div>
             <div className="flex flex-col items-stretch w-1/2 md:w-full ml-5 max-md:w-full max-md:ml-0">

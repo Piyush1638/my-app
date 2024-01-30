@@ -23,7 +23,7 @@ const AccordionDiv = () => {
               <AccordionItem value={`value ${index}`} 
               
               >
-                <AccordionTrigger className="text-slate-50 font-light ">{accordion.title}</AccordionTrigger>
+                <AccordionTrigger className="dark:text-slate-50 text-black font-light ">{accordion.title}</AccordionTrigger>
                 <AccordionContent className="text-gray-500 pb-4 lg:pb-8">{accordion.content}</AccordionContent>
               </AccordionItem>
             </div>
