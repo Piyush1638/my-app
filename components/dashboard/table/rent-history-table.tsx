@@ -58,14 +58,14 @@ export function DataTable<TData, TValue>({
 
   return (
     <div>
-      <div className="flex gap-4 max-md:overflow-x-auto  justify-between items-center py-4">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-4 max-md:overflow-x-auto  justify-between items-center py-4">
         <div>
           <Popover>
             <PopoverTrigger asChild>
               <Button
                 variant={"outline"}
                 className={cn(
-                  "w-[280px] justify-start text-left font-normal",
+                  "min-w-[100px] w-full justify-start text-left font-normal dark:bg-transparent border-[#7986AE]",
                   !dateFrom && "text-muted-foreground"
                 )}
               >
@@ -89,7 +89,7 @@ export function DataTable<TData, TValue>({
               <Button
                 variant={"outline"}
                 className={cn(
-                  "w-[280px] justify-start text-left font-normal",
+                  "min-w-[100px] w-full justify-start text-left font-normal dark:bg-transparent border-[#7986AE]",
                   !date && "text-muted-foreground"
                 )}
               >
@@ -116,13 +116,13 @@ export function DataTable<TData, TValue>({
               table.getColumn("name")?.setFilterValue(event.target.value);
               // console.log(event.target.value)
             }}
-            className="max-w-md max-lg:w-auto"
+            className=" min-w-[100px] w-full dark:bg-transparent border-[#7986AE]"
           />
         </div>
 
         <div>
           <Input
-            placeholder="Filter country..."
+            placeholder="Country"
             value={
               (table.getColumn("country")?.getFilterValue() as string) ?? ""
             }
@@ -130,11 +130,11 @@ export function DataTable<TData, TValue>({
               table.getColumn("country")?.setFilterValue(event.target.value);
               // console.log(event.target.value)
             }}
-            className="max-w-xs max-lg:w-auto"
+            className="min-w-[100px] w-full dark:bg-transparent border-[#7986AE]"
           />
         </div>
-        <div className="bg-[#282C38] p-2.5 border rounded border-solid border-[#3C4254] w-max text-[#AF0] text-sm font-normal">
-          <h6 className="w-max">Total Commissions = $575 USDT</h6>
+        <div className="dark:bg-[#282C38] bg-[#282c38]/20 py-2.5 px-4 w-full border rounded border-solid border-[#7986AE] dark:border-[#3C4254] max-lg:col-span-2 text-black dark:text-[#AF0] text-sm font-normal">
+          <h6 className="w-auto">Total Commissions = $575 USDT</h6>
         </div>
       </div>
       <div className="rounded-md ">

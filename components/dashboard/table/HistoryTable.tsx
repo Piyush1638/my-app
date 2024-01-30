@@ -17,13 +17,13 @@ function getData() {
 const HistoryTable = () => {
   const data = getData() as Rent[];
   return (
-    <div className="p-5 bg-[#1D1E21] rounded-xl">
+    <div className="p-5 bg-white dark:bg-[#1D1E21] rounded-xl">
       <h2
-      className="text-2xl font-bold text-white"
+      className="text-2xl font-bold text-black dark:text-white"
       >
       History of Rents
       </h2>
-      <h5 className="mt-1 mb-6 text-gray-600 text-base">
+      <h5 className="mt-1 mb-6 dark:text-gray-600 text-black font-normal   text-base">
       List of Rents receveid
       </h5>
       <DataTable columns={columns} data={data} />
