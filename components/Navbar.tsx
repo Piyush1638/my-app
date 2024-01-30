@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <div className={
       cn("w-full bg-primary pe-2  mf:px-4 py-4 fixed top-0 z-50",
-       pathname === "/dashboard" && "bg-[#141518]")
+       pathname === "/dashboard" || pathname==="/faq" && "bg-[#141518]")
     }>
       <div className="flex items-stretch justify-between gap-5 max-md:flex-wrap">
         <div className="flex items-center sm:items-stretch justify-between gap-3 sm:gap-5 px-5">
@@ -58,7 +58,7 @@ const Navbar = () => {
               href="/cardetail"
               className={
                 cn(
-                  pathname === "/cardetail" || pathname ===  "/" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 cursor-pointer text-base font-semibold leading-6 my-auto"
+                  pathname === "/cardetail" || pathname ===  "/" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
                 )
               }
             >
@@ -68,7 +68,7 @@ const Navbar = () => {
               href="/dashboard"
               className={
                 cn(
-                  pathname === "/dashboard" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 cursor-pointer text-base font-semibold leading-6 my-auto"
+                  pathname === "/dashboard" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
                 )
               }
             >

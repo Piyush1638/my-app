@@ -4,17 +4,27 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
+import {Urbanist} from 'next/font/google'
+
+const urbanist = Urbanist({
+  subsets: ["latin"],
+})
 
 const AccordionDiv = () => {
   return (
-    <div className="sm:w-4/5 w-full sm:mt-0 mt-10">
+    <div className={
+      cn("sm:w-4/5 w-full sm:mt-0 mt-10", urbanist.className)
+    }>
       <Accordion type="single" collapsible>
         {accordions.map((accordion, index) => {
           return (
             <div key={index}>
-              <AccordionItem value={`value ${index}`} >
-                <AccordionTrigger className="text-slate-50 font-light">{accordion.title}</AccordionTrigger>
-                <AccordionContent className="text-gray-500">{accordion.content}</AccordionContent>
+              <AccordionItem value={`value ${index}`} 
+              
+              >
+                <AccordionTrigger className="text-slate-50 font-light ">{accordion.title}</AccordionTrigger>
+                <AccordionContent className="text-gray-500 pb-4 lg:pb-8">{accordion.content}</AccordionContent>
               </AccordionItem>
             </div>
           );
