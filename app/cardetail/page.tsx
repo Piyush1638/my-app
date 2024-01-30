@@ -8,7 +8,7 @@ import NftCarOwner from "@/components/cardetails/NftCarOwner";
 
 const page = () => {
   return (
-    <section className="min-h-screen overflow-x-hidden mf:px-10 mf:pt-10 px-3 pt-4 pb-0 bg-primary">
+    <section className="min-h-screen overflow-x-hidden mf:px-10 mf:pt-10 px-3 pt-4 pb-0 bg-primary dark:bg-dark-primary">
       <div className="sm:px-5 mb-7 mt-20">
         <p className="text-slate-500">Home {">"} Mint NFT</p>
       </div>

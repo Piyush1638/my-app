@@ -19,8 +19,8 @@ const Navbar = () => {
 
   return (
     <div className={
-      cn("w-full bg-primary pe-2  mf:px-4 py-4 fixed top-0 z-50",
-       pathname === "/dashboard" || pathname==="/faq" && "bg-[#141518]")
+      cn("w-full bg-primary dark:bg-dark-primary pe-2  mf:px-4 py-4 fixed top-0 z-50",
+       pathname === "/dashboard" || pathname==="/faq" && "dark:bg-[#141518] bg-white")
     }>
       <div className="flex items-stretch justify-between gap-5 max-md:flex-wrap">
         <div className="flex items-center sm:items-stretch justify-between gap-3 sm:gap-5 px-5">
@@ -46,7 +46,7 @@ const Navbar = () => {
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"
               className="aspect-[1.04] object-contain object-center sm:w-[55px] w-[30px] overflow-hidden shrink-0 max-w-full"
             />
-            <div className="text-zinc-50 sm:text-3xl text-lg font-bold leading-10 grow shrink basis-auto my-auto">
+            <div className="dark:text-gray-100 text-black  sm:text-3xl text-lg font-bold leading-10 grow shrink basis-auto my-auto">
               Hulk Cars
             </div>
           </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
               href="/cardetail"
               className={
                 cn(
-                  pathname === "/cardetail" || pathname ===  "/" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
+                  pathname === "/cardetail" || pathname ===  "/" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[#424242] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
                 )
               }
             >
@@ -142,7 +142,7 @@ const Navbar = () => {
         </div>
       </div>
       {openMenu && (
-        <div className="mf:hidden flex flex-col justify-center text-white my-3 py-3  absolute left-0 z-10 right-0 bg-primary h-screen">
+        <div className="mf:hidden flex flex-col justify-center text-white my-3 py-3  absolute left-0 z-10 right-0 bg-primary dark:bg-dark-primary h-screen">
           <div className="flex flex-col justify-center  gap-5 px-5">
             <Link
               href="/cardetail"

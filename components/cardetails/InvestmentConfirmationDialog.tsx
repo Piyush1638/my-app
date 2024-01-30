@@ -17,11 +17,13 @@ const InvestmentConfirmationDialog = () => {
 
   return (
     <div className="max-h-screen overflow-x-auto">
-      <Dialog>
+      <Dialog
+      
+      >
         <DialogTrigger className="text-white">
           Open Investment Confimation
         </DialogTrigger>
-        <DialogContent className="bg-primary border-none max-md:overflow-y-auto">
+        <DialogContent className="bg-primary dark:bg-dark-primary border-none max-md:pointer-events-auto max-md:h-screen">
           <DialogHeader>
             <DialogTitle className="text-slate-50 text-start">
               {formHeading}

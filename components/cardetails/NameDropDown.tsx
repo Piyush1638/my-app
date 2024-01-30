@@ -41,7 +41,7 @@ const NameDropDown = () => {
         </div>
 
         {isDialogVisible && (
-          <div className="md:w-1/2 px-3 shadow-2xl shadow-black  bg-primary max-h-[400px] overflow-y-auto z-10 absolute md:left-10 left-0 rounded-lg">
+          <div className="md:w-1/2 px-3 shadow-2xl dark:shadow-black shadow-white  bg-primary dark:bg-dark-primary max-h-[400px] overflow-y-auto z-10 absolute md:left-10 left-0 rounded-lg">
             <Dialog />
           </div>
         )}
