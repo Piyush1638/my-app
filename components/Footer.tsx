@@ -1,17 +1,26 @@
 import { IoIosArrowRoundForward } from "react-icons/io";
-import {Urbanist} from 'next/font/google'
+import { Urbanist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { FaFacebookF } from "react-icons/fa6";
+import { FaTwitter } from "react-icons/fa";
+import { SlSocialYoutube } from "react-icons/sl";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
+import Link from "next/link";
 
 const urbanist = Urbanist({
   subsets: ["latin"],
-})
+});
 
 const Footer = () => {
   return (
-    <div className={
-      cn("bg-primary dark:bg-[#191A1D] flex flex-col items-stretch pt-12 pb-6 px-14 border-t-2 border-t-[#10141a26]  dark:border-t-zinc-800 border-solid max-md:px-5 overflow-hidden",
-      urbanist.className)
-    }>
+    <div
+      className={cn(
+        "bg-primary dark:bg-[#191A1D] flex flex-col items-stretch pt-12 pb-6 px-14 border-t-2 border-t-[#10141a26]  dark:border-t-zinc-800 border-solid max-md:px-5 overflow-hidden",
+        urbanist.className
+      )}
+    >
       <div className="items-center flex flex-col mt-1 pb-11 px-3.5 max-md:max-w-full">
         <div className="self-stretch max-md:max-w-full">
           <div className="gap-5 grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 max-md:items-stretch max-md:gap-0">
@@ -32,26 +41,12 @@ const Footer = () => {
                   and has its own fleet of drivers.
                 </div>
                 <div className="flex items-stretch justify-between gap-5 mt-8">
-                  <div className="text-zinc-500 text-center text-base leading-7 grow">
-                    
-                  </div>
-                  <div className="text-zinc-500 text-center text-base leading-7">
-                    
-                  </div>
-                  <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/34b10b9a7b8a71b049026f94b8811e46e9a20d4af42ed43c5a29db376f9c0fc2?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"
-                    className="aspect-square object-contain object-center w-[15px] overflow-hidden shrink-0 max-w-full my-auto"
-                  />
-                  <div className="dark:text-zinc-500 text-[#5B6169] text-center text-base leading-7">
-                    
-                  </div>
-                  <div className="dark:text-zinc-500 text-[#5B6169] text-center text-base leading-6 my-auto">
-                    
-                  </div>
-                  <div className="dark:text-zinc-500 text-[#5B6169] text-center text-base leading-7 grow">
-                    
-                  </div>
+                  <SocialLinks link="#" icon={<FaFacebookF />} />
+                  <SocialLinks link="#" icon={<FaTwitter />} />
+                  <SocialLinks link="#" icon={<SlSocialYoutube />} />
+                  <SocialLinks link="#" icon={<FaLinkedinIn />} />
+                  <SocialLinks link="#" icon={<FaInstagram />} />
+                  <SocialLinks link="#" icon={<FaGithub />} />
                 </div>
               </div>
             </div>
@@ -98,7 +93,7 @@ const Footer = () => {
                     />
                   </div>
                   <button className="h-full w-fit text-black dark:text-white relative border-l">
-                  <IoIosArrowRoundForward className="w-full text-3xl"/>
+                    <IoIosArrowRoundForward className="w-full text-3xl" />
                   </button>
                 </div>
               </div>
@@ -110,7 +105,9 @@ const Footer = () => {
         </div>
         <div className="text-[#5B6169] dark:text-lime-400 text-sm leading-7 whitespace-nowrap  mt-3">
           <span className="">You can contact us at: </span>
-          <span className="text-[#10141A] dark:text-lime-500">mint@hulkcars.com</span>
+          <span className="text-[#10141A] dark:text-lime-500">
+            mint@hulkcars.com
+          </span>
         </div>
       </div>
       <div className="text-[#5B6169] dark:text-lime-400 text-center text-sm leading-7 self-center whitespace-nowrap mt-6">
@@ -123,3 +120,9 @@ const Footer = () => {
 };
 
 export default Footer;
+
+const SocialLinks = ({ link, icon }: { link: string; icon: any }) => (
+  <Link href={link} className="text-zinc-500 text-sm text-center leading-7">
+    {icon}
+  </Link>
+);

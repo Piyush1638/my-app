@@ -14,7 +14,7 @@ const CarouselCard = ({ isHighlighted, callFrom }: { isHighlighted: boolean, cal
       <div className="flex flex-col justify-center py-2">
         {isHighlighted && callFrom === "NFT Car Owner" &&(
           <div className="flex items-center justify-center -mb-3 z-10">
-            <div className="flex items-center justify-center bg-slate-300 h-[20px] w-[20px] rounded-full">
+            <div className="flex items-center justify-center bg-slate-300 text-white h-[20px] w-[20px] rounded-full">
               <Image
                 src="/assets/images/tick.png"
                 alt="selected"
@@ -30,9 +30,10 @@ const CarouselCard = ({ isHighlighted, callFrom }: { isHighlighted: boolean, cal
             alt="car"
             height={200}
             width={200}
+            className={`${isHighlighted ? "opacity-100": "opacity-20"}`}
           />
         </Link>
-        <p className="text-slate-50 text-xs text-center mt-4">Zolls spyder Roder - 1%</p>
+        <p className={`${isHighlighted ? "text-[#10141A] dark:text-[#fcfcfc]": "text-[#10141A] dark:text-[#868686]"} font-bold text-xs text-center mt-4`}>Zolls spyder Roder - 1%</p>
       </div>
     </div>
   );

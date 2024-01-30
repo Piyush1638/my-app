@@ -4,8 +4,8 @@ import React from "react";
 
 const Card = ({ isHighlighted }: { isHighlighted: boolean }) => {
   return (
-    <div className={`max-w-[220px] border-4 border-solid rounded-2xl border-zinc-800  my-10 sm:px-5 px-2 ${isHighlighted ? "shadow-2xl drop-shadow-2xl scale-[1.18] relative -top-5  z-10" : ""}`}>
-      <div className="flex items-center justify-center py-3 border-b-2 border-zinc-800">
+  <div className={`max-w-[220px] border-4 border-solid rounded-2xl dark:border-[#2D2E31] border-[#CFCFCF]  my-10 sm:px-5 px-2 ${isHighlighted ? "shadow-2xl drop-shadow-2xl scale-[1.18] relative -top-5  z-10" : ""} backdrop-filter backdrop-blur-md`}>
+      <div className="flex items-center justify-center py-3 border-b-2 dark:border-[#424242] border-[#10141a1a]">
         <a href="#">
           <Image
             className="rounded-t-lg"
@@ -18,15 +18,15 @@ const Card = ({ isHighlighted }: { isHighlighted: boolean }) => {
       </div>
       <div className="p-5 flex flex-col">
         <div className="flex flex-col justify-center">
-          <p className="text-center  text-sm text-slate-50">
+          <p className="text-center  text-sm dark:text-[#fff] text-[#10141A] font-semibold">
             Porsche Tagra-4
           </p>
-          <p className="text-center text-sm text-slate-500">$150.00</p>
+          <p className="text-center text-sm dark:text-[#868686] text-[#5B6169]">$150.00</p>
         </div>
         {isHighlighted && (
           <Link
             href="/cardetail"
-            className=" flex items-center justify-center border border-slate-500 rounded-md py-2 my-2 text-slate-500 "
+            className=" flex items-center justify-center border font-semibold border-[#10141a1a] rounded-md py-2 my-2 dark:text-[#E7E8E8] text-[#10141A] "
           >
             View Car
           </Link>

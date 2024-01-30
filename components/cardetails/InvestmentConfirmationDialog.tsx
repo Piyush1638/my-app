@@ -20,12 +20,12 @@ const InvestmentConfirmationDialog = () => {
       <Dialog
       
       >
-        <DialogTrigger className="text-white">
+        <DialogTrigger className="dark:text-white text-black">
           Open Investment Confimation
         </DialogTrigger>
         <DialogContent className="bg-primary dark:bg-dark-primary border-none max-md:pointer-events-auto max-md:h-screen">
           <DialogHeader>
-            <DialogTitle className="text-slate-50 text-start">
+            <DialogTitle className="dark:text-slate-50 text-[#10141A] text-start">
               {formHeading}
             </DialogTitle>
             <DialogDescription>
@@ -48,8 +48,8 @@ const InvestmentConfirmationDialog = () => {
                   <DetailsDiv title="Payment Method" value="Porsche Tiagra-4" />
                   <DetailsDiv title="Payment Time" value="Porsche Tiagra-4" />
 
-                  <div className="flex justify-between items-center bg-[#3d4252] px-2 py-2 rounded-lg mt-6">
-                    <p className="text-slate-50 font-light">
+                  <div className="flex justify-between items-center dark:bg-[#3d4252] bg-[#fff] px-2 py-2 rounded-lg mt-6">
+                    <p className="dark:text-slate-50 text-[#10141A] font-light">
                       HULK LTD - Terms & condition
                     </p>
                     <button className="bg-lime-400 sm:text-base text-sm text-black px-2 py-2 rounded-lg font-semibold flex items-center justify-center gap-3">
@@ -68,15 +68,15 @@ const InvestmentConfirmationDialog = () => {
                           >
                             <input
                               type="checkbox"
-                              className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-none checked:bg-lime-400"
+                              className="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md  border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-none checked:bg-lime-400  border border-black"
                               id="checkbox"
                             />
-                            <span className="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+                            <span className="absolute dark:text-white text-black transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-3.5 w-3.5"
+                                className="h-3.5 w-3.5 fill-bg-[#E7E8E8]"
                                 viewBox="0 0 20 20"
-                                fill="currentColor"
+                                // fill="currentColor"
                                 stroke="currentColor"
                                 stroke-width="1"
                               >
@@ -91,10 +91,10 @@ const InvestmentConfirmationDialog = () => {
                         </div>
                         <label
                           htmlFor="agree"
-                          className="text-slate-50 text-xs"
+                          className="dark:text-slate-50 text-black text-xs"
                         >
                           By confirming you agree to the{" "}
-                          <span className="text-lime-400">term</span> if company
+                          <span className="dark:text-lime-400 text-black">term</span> if company
                           and accept them hereby
                         </label>
                       </div>
@@ -106,7 +106,7 @@ const InvestmentConfirmationDialog = () => {
                       setFormHeading("");
                       setOpenSuccessfullyInvested(true);
                     }}
-                    className="bg-lime-400 px-3 py-5 rounded-full text-black font-semibold mt-10"
+                    className="dark:bg-lime-400 bg-black text-white px-3 py-5 rounded-full dark:text-black font-semibold mt-10"
                   >
                     Mint NFT
                   </button>
@@ -126,11 +126,11 @@ export default InvestmentConfirmationDialog;
 
 const DetailsDiv = ({ title, value }: { title: string; value: string }) => {
   return (
-    <div className="flex justify-between items-center bg-[#3d4252] px-2 py-2 rounded-lg mt-2">
-      <p className="text-slate-50 font-light">{title}</p>
+    <div className="flex justify-between items-center dark:bg-[#3d4252] bg-[#fff] px-2 py-2 rounded-lg mt-2">
+      <p className="dark:text-slate-50 text-black font-light">{title}</p>
       <p
         className={`font-medium ${
-          title === "Amount" ? "text-lime-400" : "text-slate-50"
+          title === "Amount" ? "text-lime-400" : "dark:text-slate-50 text-black"
         }`}
       >
         {value}

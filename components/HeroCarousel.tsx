@@ -91,9 +91,9 @@ export function HeroCarousel() {
       </CarouselContent>
 
       <CarouselPrevious 
-      className="bg-[#424242] hover:bg-primary dark:hover:bg-dark-primary"
+      className="bg-[#F6F6F6] dark:bg-[#2A2B2D] hover:bg-primary dark:hover:bg-dark-primary"
       />
-      <CarouselNext className="bg-[#424242]"/>
+      <CarouselNext className="bg-[#F6F6F6] dark:bg-[#2A2B2D]"/>
     </Carousel>
         </div>
   );

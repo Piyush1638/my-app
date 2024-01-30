@@ -75,7 +75,6 @@ export default function CarOwnerCarousel({callFrom}:{callFrom: string}) {
         },
       }}
       setApi={setApi}
-      
       className="w-full"
       >
       <CarouselContent>
@@ -91,9 +90,9 @@ export default function CarOwnerCarousel({callFrom}:{callFrom: string}) {
       </CarouselContent>
 
       <CarouselPrevious 
-      className="bg-zinc-900  hover:bg-primary dark:hover:bg-dark-primary"
+      className="bg-[#F6F6F6] dark:bg-[#2A2B2D] hover:bg-primary dark:hover:bg-dark-primary"
       />
-      <CarouselNext className="bg-zinc-900 "/>
+      <CarouselNext className="bg-[#F6F6F6] dark:bg-[#2A2B2D]"/>
     </Carousel>
         </div>
   );

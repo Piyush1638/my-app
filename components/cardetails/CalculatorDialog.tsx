@@ -20,21 +20,21 @@ const CalculatorDialog = () => {
       </DialogTrigger>
       <DialogContent className="bg-primary dark:bg-dark-primary border-none">
         <DialogHeader>
-          <DialogTitle className="text-slate-50 text-start">
+          <DialogTitle className="dark:text-slate-50 text-black text-start">
             Calculator
           </DialogTitle>
           <DialogDescription>
             {!estimateAmountOpen && (
               <div className="flex flex-col justify-center mt-3">
                 <div>
-                  <label className="text-zinc-500 text-sm font-medium leading-5 mt-5 max-md:max-w-full flex justify-start">
+                  <label className="dark:text-zinc-500 text-[#5B6169] text-sm font-medium leading-5 mt-5 max-md:max-w-full flex justify-start">
                     Amount Invested
                   </label>
-                  <div className="mt-1 relative rounded-md shadow-sm flex items-center justify-center gap-2 bg-[#2e2f32] px-3 py-2">
-                    <span className="text-slate-50">$</span>
+                  <div className="mt-1 relative rounded-md shadow-sm flex items-center justify-center gap-2 dark:bg-[#2e2f32] bg-[#F6F6F6] px-3 py-2">
+                    <span className="dark:text-slate-50 text-[#10141A]">$</span>
                     <input
                       type="number"
-                      className="bg-transparent outline-none text-slate-50 block w-full sm:text-sm  rounded-md"
+                      className="dark:bg-transparent bg-[#F6F6F6] outline-none dark:text-slate-50 text-[#10141A]  block w-full sm:text-sm  rounded-md"
                       placeholder="250.00"
                     />
                   </div>
@@ -42,28 +42,28 @@ const CalculatorDialog = () => {
 
                 <div className="flex sm:items-center sm:flex-row sm:justify-between flex-col gap-4">
                   <div className="flex-1">
-                    <label className="text-zinc-500 text-sm font-medium leading-5 mt-5 max-md:max-w-full flex justify-start">
+                    <label className="dark:text-zinc-500 text-[#5B6169] text-sm font-medium leading-5 mt-5 max-md:max-w-full flex justify-start">
                       Rent
                     </label>
-                    <div className="mt-1 relative rounded-md shadow-sm flex items-center justify-center gap-2 bg-[#2e2f32] px-3 py-2">
-                      <span className="text-slate-50">$</span>
+                    <div className="mt-1 relative rounded-md shadow-sm flex items-center justify-center gap-2 dark:bg-[#2e2f32] bg-[#F6F6F6] px-3 py-2">
+                      <span className="dark:text-slate-50 text-[#10141A]">$</span>
                       <input
                         type="number"
-                        className="bg-transparent outline-none text-slate-50 block w-full sm:text-sm  rounded-md"
+                        className="dark:bg-transparent bg-[#F6F6F6] outline-none dark:text-slate-50 text-[#10141A] block w-full sm:text-sm  rounded-md"
                         placeholder="250.00"
                       />
                     </div>
                   </div>
 
                   <div className="flex-1">
-                    <label className="text-zinc-500 text-sm font-medium leading-5 mt-5 max-md:max-w-full flex justify-start">
+                    <label className="dark:text-zinc-500 text-[#5B6169]  text-sm font-medium leading-5 mt-5 max-md:max-w-full flex justify-start">
                       Terms
                     </label>
                     <div className="mt-1 relative rounded-md shadow-sm">
                       <select
                         name="durations"
                         id="durations"
-                        className="bg-[#2e2f32] outline-none text-slate-50 px-3 py-2 block w-full sm:text-sm rounded-md"
+                        className="dark:bg-[#2e2f32] bg-[#F6F6F6] outline-none dark:text-slate-50 text-[#10141A] px-3 py-2 block w-full sm:text-sm rounded-md"
                       >
                         <option value="1 Month">1 Month</option>
                         <option value="2 Month">2 Month</option>
@@ -75,7 +75,7 @@ const CalculatorDialog = () => {
                 </div>
 
                 <button
-                  className="text-stone-900 text-sm font-medium leading-5 justify-center items-stretch shadow-sm bg-lime-400 mt-5 px-4 py-2.5 rounded-md self-start"
+                  className="dark:text-stone-900 text-sm font-medium leading-5 justify-center items-stretch shadow-sm dark:bg-lime-400 bg-black text-white mt-5 px-4 py-2.5 rounded-full self-start"
                   type="submit"
                   onClick={()=>setEstimateAmountOpen(true)}
                 >
@@ -87,27 +87,27 @@ const CalculatorDialog = () => {
             {estimateAmountOpen && (
               <div className="flex flex-col justify-center mt-3">
                 <div>
-                  <label className="text-zinc-500 text-sm font-medium leading-5 mt-5 max-md:max-w-full flex justify-start">
+                  <label className="dark:text-zinc-500 text-[#5B6169] text-sm font-medium leading-5 mt-5 max-md:max-w-full flex justify-start">
                     Estimate Amount
                   </label>
-                  <div className="mt-1 relative rounded-md shadow-sm flex items-center justify-center gap-2 bg-[#2e2f32] px-3 py-2">
-                    <span className="text-slate-50">$</span>
+                  <div className="mt-1 relative rounded-md shadow-sm flex items-center justify-center gap-2 dark:bg-[#2e2f32] bg-[#F6F6F6] px-3 py-2">
+                    <span className="dark:text-slate-50 text-[#10141A]">$</span>
                     <input
                       type="number"
-                      className="bg-transparent outline-none text-slate-50 block w-full sm:text-sm  rounded-md"
+                      className="dark:bg-transparent bg-[#F6F6F6] outline-none dark:text-slate-50 text-[#10141A] block w-full sm:text-sm  rounded-md"
                       placeholder="250.00"
                     />
                   </div>
                   <div className="flex items-center gap-3">
                     <button
-                      className="text-stone-900 text-sm font-medium leading-5 justify-center items-stretch shadow-sm bg-lime-400 mt-5 px-4 py-2.5 rounded-md self-start"
+                      className="dark:text-stone-900 text-sm font-medium leading-5 justify-center items-stretch shadow-sm bg-black text-white mt-5 px-4 py-2.5 rounded-md self-start"
                       type="submit"
                       onClick={() => setEstimateAmountOpen(false)}
                     >
                       Cancel
                     </button>
                     <button
-                      className="text-stone-900 text-sm font-medium leading-5 justify-center items-stretch shadow-sm bg-lime-400 mt-5 px-4 py-2.5 rounded-md self-start"
+                      className="dark:text-stone-900 text-sm font-medium leading-5 justify-center items-stretch shadow-sm bg-black text-white mt-5 px-4 py-2.5 rounded-md self-start"
                       type="submit"
                     >
                       Submit

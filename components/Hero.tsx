@@ -3,10 +3,10 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="flex flex-col items-stretch sm:px-5 mb-20 mt-24">
-      <div className="text-zinc-50 mf:text-5xl font-medium leading-[63.7px] w-full max-md:max-w-full max-md:text-3xl">
+      <div className="dark:text-[#FCFCFC] text-[#10141A] mf:text-5xl font-medium leading-[63.7px] w-full max-md:max-w-full max-md:text-3xl">
         Choose Mint Car{" "}
       </div>
-      <div className="shadow-2xl backdrop-blur-[8.75px] w-full mt-12 mf:pl-9 px-2 mf:pr-14 mf:pt-12 mf:pb-5 py-2 rounded-3xl border-4 border-solid border-zinc-800 max-md:max-w-full max-md:mt-10 max-md:px-5">
+      <div className="shadow-2xl backdrop-blur-[8.75px] w-full mt-12 mf:pl-9 px-2 mf:pr-14 mf:pt-12 mf:pb-5 py-2 rounded-3xl border-4 border-solid dark:border-[#2D2E31] border-[#C7C8C9] max-md:max-w-full max-md:mt-10 max-md:px-5">
         <div className="gap-5 flex max-md:flex-col-reverse max-md:items-stretch max-md:gap-0">
           <div className="flex flex-col items-stretch w-[24%] max-md:w-full max-md:ml-0">
             <div className="items-stretch flex grow flex-col mt-1 max-md:mt-10">
@@ -18,44 +18,20 @@ const Hero = () => {
                   alt="Car"
                   className="aspect-[0.65] object-contain object-center w-10 overflow-hidden shrink-0 max-w-full"
                 />
-                <div className="text-zinc-50 text-3xl font-medium leading-10 grow whitespace-nowrap my-auto">
+                <div className="text-[#10141A] dark:text-[#FCFCFC] text-3xl font-medium leading-10 grow whitespace-nowrap my-auto">
                   Porsche Tagra-4
                 </div>
               </div>
-              <div className="justify-between items-stretch flex gap-5 text-base font-medium whitespace-nowrap mt-6">
-                <div className="text-white leading-[140%]">Manufacturer</div>
-                <div className="text-zinc-500 text-right leading-[140%]">
-                  Porsche
-                </div>
-              </div>
-              <div className="justify-between items-stretch flex gap-5 text-base font-medium whitespace-nowrap mt-3">
-                <div className="text-white leading-[140%]">Model</div>
-                <div className="text-zinc-500 text-right leading-[140%]">
-                  Tagra-4
-                </div>
-              </div>
-              <div className="justify-between items-stretch flex gap-5 text-base font-medium whitespace-nowrap mt-3">
-                <div className="text-white leading-[140%]">Kilometers</div>
-                <div className="text-zinc-500 text-right leading-[140%]">
-                  10.000
-                </div>
-              </div>
-              <div className="justify-between items-stretch flex gap-5 text-base font-medium whitespace-nowrap mt-3">
-                <div className="text-white leading-[140%]">Year</div>
-                <div className="text-zinc-500 text-right leading-[140%]">
-                  2023
-                </div>
-              </div>
-              <div className="justify-between items-stretch flex gap-5 text-base font-medium whitespace-nowrap mt-3">
-                <div className="text-white leading-[140%]">Country</div>
-                <div className="text-zinc-500 text-right leading-[140%]">
-                  USA
-                </div>
-              </div>
-              <div className="bg-neutral-700 shrink-0 h-px mt-4" />
+              <CarDetail title="Manufacturer" value="Porsche" />
+              <CarDetail title="Model" value="Tagra-4" />
+              <CarDetail title="Kilometers" value="10.000" />
+              <CarDetail title="Year" value="2023" />
+              <CarDetail title="Country" value="USA" />
+
+              <div className="dark:bg-[#424242] bg-[#10141A]/10 shrink-0 h-px mt-4" />
               <div className="justify-between items-stretch flex gap-5 text-base font-medium whitespace-nowrap mt-4">
-                <div className="text-zinc-500 leading-[140%]">Price</div>
-                <div className="text-zinc-50 text-right">$150.000</div>
+                <div className="text-[#5B6169] dark:text-[#868686] leading-[140%]">Price</div>
+                <div className="text-[#10141A)] dark:text-[#FCFCFC] text-right">$150.000</div>
               </div>
             </div>
           </div>
@@ -86,3 +62,14 @@ const Hero = () => {
 };
 
 export default Hero;
+
+const CarDetail = ({ title, value }: { title: string; value: string }) => (
+  <div className="justify-between items-stretch flex gap-5 text-base font-medium whitespace-nowrap mt-3">
+    <div className="text-[#10141A] dark:text-[#868686] leading-[140%]">
+      {title}
+    </div>
+    <div className="text-[#5B6169] dark:text-[#fff] text-right leading-[140%]">
+      {value}
+    </div>
+  </div>
+);

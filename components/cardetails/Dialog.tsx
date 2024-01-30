@@ -86,14 +86,14 @@ export default function Dialog() {
   return (
     <div className="relative">
       <div className="px-3 py-5 absolute top-0">
-        <h1 className="text-2xl md:font-semibold font-medium text-slate-50">Available Cars</h1>
+        <h1 className="text-2xl md:font-semibold font-medium text-[#10141A] dark:text-[#FCFCFC]">Available Cars</h1>
       </div>
       <Table className="mt-16">
         <TableHeader>
-          <TableRow className="">
-            <TableHead className="">Car Model</TableHead>
-            <TableHead>Date</TableHead>
-            <TableHead className="">Amount</TableHead>
+          <TableRow className="border-b border-[#CDCED0] dark:border-[#424242]">
+            <TableHead className="text-[#5B6169] dark:text-[#868686]">Car Model</TableHead>
+            <TableHead className="text-[#5B6169] dark:text-[#868686]" >Date</TableHead>
+            <TableHead className="text-[#5B6169] dark:text-[#868686]">Amount</TableHead>
           </TableRow>
         </TableHeader>
         <TableBody>
@@ -110,18 +110,18 @@ export default function Dialog() {
                       />
                     </div>
                     <div className="ml-4">
-                      <div className="text-sm font-medium text-slate-100">
+                      <div className="text-sm font-semibold text-[#10141A] dark:text-[#FCFCFC]">
                         {carData.brand}
                       </div>
-                      <div className="text-sm text-gray-500">
+                      <div className="text-sm text-[#5B6169] dark:text-[#868686] font-semibold">
                         {carData.model}
                       </div>
                     </div>
                   </div>
                 </div>
               </TableCell>
-              <TableCell className="text-slate-500">{carData.date}</TableCell>
-              <TableCell className="text-slate-50">{carData.amount}</TableCell>
+              <TableCell className="text-[#5B6169]  dark:text-[#868686] font-medium">{carData.date}</TableCell>
+              <TableCell className="text-[#10141A] dark:text-[#FCFCFC] font-medium ">{carData.amount}</TableCell>
             </TableRow>
           ))}
         </TableBody>

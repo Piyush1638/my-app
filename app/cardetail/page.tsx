@@ -2,7 +2,6 @@ import CalculatorDialog from "@/components/cardetails/CalculatorDialog";
 import CarCarousel from "@/components/cardetails/CarCarousel";
 import InvestmentConfirmationDialog from "@/components/cardetails/InvestmentConfirmationDialog";
 import ListOfNft from "@/components/cardetails/ListOfNft";
-import MonthlyRent from "@/components/cardetails/MonthlyRent";
 import NameDropDown from "@/components/cardetails/NameDropDown";
 import NftCarOwner from "@/components/cardetails/NftCarOwner";
 
@@ -23,8 +22,8 @@ const page = () => {
       <InvestmentConfirmationDialog/>
 
       <div className="mf:hidden flex flex-row justify-between gap-2">
-        <h1 className="text-2xl text-slate-50">$150.000</h1>
-        <h3 className="text-gray-400 text-base">+$445.8900 Fees</h3>
+        <h1 className="text-2xl text-[#10141A] dark:text-[#FCFCFC]">$150.000</h1>
+        <h3 className="text-[#5B6169] dark:text-[#868686] text-base">+$445.8900 Fees</h3>
       </div>
 
       <div className="grid  mf:grid-cols-3 grid-cols-1 mt-16 mf:mt-20 gap-5 md:overflow-y-hidden">
