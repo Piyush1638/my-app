@@ -58,7 +58,7 @@ export function DataTable<TData, TValue>({
 
   return (
     <div>
-      <div className="flex gap-4 justify-between items-center py-4">
+      <div className="flex gap-4 max-md:overflow-x-auto  justify-between items-center py-4">
         <div>
           <Popover>
             <PopoverTrigger asChild>
@@ -116,7 +116,7 @@ export function DataTable<TData, TValue>({
               table.getColumn("name")?.setFilterValue(event.target.value);
               // console.log(event.target.value)
             }}
-            className="max-w-md"
+            className="max-w-md max-lg:w-auto"
           />
         </div>
 
@@ -130,11 +130,11 @@ export function DataTable<TData, TValue>({
               table.getColumn("country")?.setFilterValue(event.target.value);
               // console.log(event.target.value)
             }}
-            className="max-w-xs"
+            className="max-w-xs max-lg:w-auto"
           />
         </div>
         <div className="bg-[#282C38] p-2.5 border rounded border-solid border-[#3C4254] w-max text-[#AF0] text-sm font-normal">
-          <h6>Total Commissions = $575 USDT</h6>
+          <h6 className="w-max">Total Commissions = $575 USDT</h6>
         </div>
       </div>
       <div className="rounded-md ">
