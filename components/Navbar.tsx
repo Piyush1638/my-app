@@ -24,13 +24,13 @@ const Navbar = () => {
       )}
     >
       <div className="flex items-stretch justify-between gap-5 max-md:flex-wrap">
-        <div className="flex items-center sm:items-stretch justify-between gap-3 sm:gap-5 px-5">
+        <div className="flex items-center sm:items-stretch justify-between gap-3 sm:gap-5 px-5 max-xsm:pr-0">
           {!openMenu ? (
             <button
               onClick={() => setOpenMenu(true)}
               className="text-slate-300 mf:hidden transition-transform duration-300 transform hover:scale-105 focus:outline-none"
             >
-              <GiHamburgerMenu className="h-[25px] w-[25px] text-black dark:text-white" />
+              <GiHamburgerMenu className="h-[25px] max-xsm:w-4 max-xsm:h-4 w-[25px] text-black dark:text-white" />
             </button>
           ) : (
             <button
@@ -41,13 +41,13 @@ const Navbar = () => {
             </button>
           )}
 
-          <Link href="/" className="items-center justify-center flex gap-4">
+          <Link href="/" className="items-center justify-center flex gap-4 max-xsm:gap-0.5">
             <img
               loading="lazy"
               srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/39c9315d2ddfd11a5e99fd03426a9617453374977ca692294566539b801904fa?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"
               className="aspect-[1.04] object-contain object-center sm:w-[55px] w-[30px] overflow-hidden shrink-0 max-w-full"
             />
-            <div className="dark:text-gray-100 text-black  sm:text-3xl text-lg font-bold leading-10 grow shrink basis-auto my-auto">
+            <div className="dark:text-gray-100 text-black  sm:text-3xl text-lg max-xsm:font-semibold font-bold leading-10 grow shrink basis-auto my-auto">
               Hulk Cars
             </div>
           </Link>
@@ -175,13 +175,14 @@ const Navbar = () => {
 
         {/* Mobile Navbar */}
 
-        <div className="mf:hidden justify-between items-center h-auto bg-black dark:bg-[#f7f7f7]  flex gap-1 mf:px-6 px-2 py-2 rounded-[51px] ">
+        <div className="mf:hidden justify-between items-center h-auto bg-black dark:bg-[#f7f7f7]  flex gap-1 mf:px-6 p-2 max-xsm:py-1  rounded-[51px] ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="25"
             height="24"
             viewBox="0 0 25 24"
             fill="none"
+            className="max-xsm:h-4 max-xsm:w-4"
           >
             <path
               d="M6.71923 6.79413C9.85033 2.36192 14.9268 2.36192 18.058 6.79413L18.4348 7.32754C18.5913 7.54918 18.5913 7.90845 18.4348 8.13009L17.1457 9.95482C17.0674 10.0656 16.9405 10.0656 16.8622 9.95482L16.3437 9.22079C14.1593 6.12874 10.6178 6.12874 8.43348 9.22079L7.87813 10.0069C7.79988 10.1177 7.67298 10.1177 7.59468 10.0069L6.30563 8.18214C6.14903 7.9605 6.14903 7.60123 6.30563 7.37959L6.71923 6.79413ZM20.7239 10.5679L21.8712 12.1919C22.0277 12.4135 22.0277 12.7728 21.8712 12.9944L16.698 20.3174C16.5415 20.539 16.2876 20.539 16.1311 20.3174L12.4595 15.1201C12.4203 15.0646 12.3569 15.0646 12.3177 15.1201L8.64623 20.3174C8.48968 20.539 8.23583 20.539 8.07928 20.3174L2.90599 12.9944C2.74944 12.7727 2.74944 12.4134 2.90599 12.1918L4.05327 10.5678C4.20983 10.3462 4.46366 10.3462 4.62021 10.5678L8.29188 15.7651C8.33098 15.8206 8.39442 15.8206 8.43358 15.7651L12.105 10.5678C12.2616 10.3462 12.5154 10.3462 12.672 10.5678L16.3436 15.7651C16.3828 15.8206 16.4462 15.8206 16.4854 15.7651L20.1569 10.5679C20.3135 10.3463 20.5673 10.3463 20.7239 10.5679Z"
@@ -189,7 +190,7 @@ const Navbar = () => {
               className="fill-[#C7C8CA] dark:fill-black"
             />
           </svg>
-          <button className="text-white dark:text-black text-xs font-normal leading-6  whitespace-nowrap self-start">
+          <button className="text-white max-xsm:text-[10px] dark:text-black text-xs font-normal leading-6  whitespace-nowrap self-start h-full flex items-center">
             Connect Wallet
           </button>
         </div>

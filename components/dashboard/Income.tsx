@@ -40,7 +40,7 @@ const Income = () => {
           <div className="leading-[140%] mt-6 dark:text-white text-black">200</div>
           <div className="leading-[140%] mt-6 dark:text-white text-black">0</div>
         </div> */}
-        <div className="">
+        <div className="overflow-auto scrollbar-none">
           {/* <img
             loading="lazy"
             srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/cb392a1ccf73a8a4ca79de435f85178a3c6fb7b088897ee4d4f556518aed7371?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/cb392a1ccf73a8a4ca79de435f85178a3c6fb7b088897ee4d4f556518aed7371?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cb392a1ccf73a8a4ca79de435f85178a3c6fb7b088897ee4d4f556518aed7371?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/cb392a1ccf73a8a4ca79de435f85178a3c6fb7b088897ee4d4f556518aed7371?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/cb392a1ccf73a8a4ca79de435f85178a3c6fb7b088897ee4d4f556518aed7371?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/cb392a1ccf73a8a4ca79de435f85178a3c6fb7b088897ee4d4f556518aed7371?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/cb392a1ccf73a8a4ca79de435f85178a3c6fb7b088897ee4d4f556518aed7371?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/cb392a1ccf73a8a4ca79de435f85178a3c6fb7b088897ee4d4f556518aed7371?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"
