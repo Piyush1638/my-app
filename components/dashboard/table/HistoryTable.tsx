@@ -1,7 +1,6 @@
-import { Payment, columns } from "./columns"
-import { DataTable } from "./data-table"
- 
-async function getData(): Promise<Payment[]> {
+import { Payment, columns } from "./columns";
+import { DataTable } from "./data-table";
+function getData() {
   // Fetch data from your API here.
   return [
     {
@@ -10,17 +9,17 @@ async function getData(): Promise<Payment[]> {
       status: "pending",
       email: "m@example.com",
     },
-    // ...
-  ]
+    
+  ];
 }
 
-const HistoryTable = async() => {
-    const data = await getData()
+const HistoryTable = () => {
+  const data = getData() as Payment[];
   return (
     <div className="">
-    <DataTable columns={columns} data={data} />
-  </div>
-  )
-}
+      <DataTable columns={columns} data={data} />
+    </div>
+  );
+};
 
-export default HistoryTable
+export default HistoryTable;
