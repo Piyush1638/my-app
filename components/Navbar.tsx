@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState ,useEffect} from "react";
+import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineClose } from "react-icons/md";
 import { Moon, Sun } from "lucide-react";
@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const { setTheme,theme } = useTheme();
+  const { setTheme, theme } = useTheme();
   const pathname = usePathname();
 
   // useEffect(() => {
@@ -18,10 +18,13 @@ const Navbar = () => {
   // }, []);
 
   return (
-    <div className={
-      cn("w-full bg-primary dark:bg-dark-primary pe-2  mf:px-4 py-4 fixed top-0 z-50",
-       pathname === "/dashboard" || pathname==="/faq" && "dark:bg-[#141518] bg-white")
-    }>
+    <div
+      className={cn(
+        "w-full bg-primary dark:bg-dark-primary pe-2  mf:px-4 py-4 fixed top-0 z-50",
+        pathname === "/dashboard" ||
+          (pathname === "/faq" && "dark:bg-[#141518] bg-white")
+      )}
+    >
       <div className="flex items-stretch justify-between gap-5 max-md:flex-wrap">
         <div className="flex items-center sm:items-stretch justify-between gap-3 sm:gap-5 px-5">
           {!openMenu ? (
@@ -56,44 +59,44 @@ const Navbar = () => {
           <div className="items-stretch flex justify-between gap-5 px-5">
             <Link
               href="/cardetail"
-              className={
-                cn(
-                  pathname === "/cardetail" || pathname ===  "/" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch bg-black dark:bg-transparent border border-[#424242] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
-                )
-              }
+              className={cn(
+                pathname === "/cardetail" || pathname === "/"
+                  ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch bg-black dark:bg-transparent border border-[#424242] px-6 py-3 rounded-[51px] border-solid max-md:px-5"
+                  : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
+              )}
             >
               Mint NFT
             </Link>
             <Link
               href="/dashboard"
-              className={
-                cn(
-                  pathname === "/dashboard" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
-                )
-              }
+              className={cn(
+                pathname === "/dashboard"
+                  ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch bg-black dark:bg-transparent border border-[#424242] px-6 py-3 rounded-[51px] border-solid max-md:px-5"
+                  : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
+              )}
             >
               Dashboard
             </Link>
           </div>
           <div className="justify-end items-stretch flex gap-3 max-md:max-w-full max-md:flex-wrap">
-            <div className="flex bg-[#2A2B2D] gap-2 px-2  rounded-full">
+            <div className="flex bg-[#F6F6F6] dark:bg-[#2A2B2D] gap-2 px-2  rounded-full">
               {/* Light Mode */}
               <button
                 onClick={() => setTheme("light")}
-                className={
-                  cn("text-white  p-2 cursor-pointer text-base font-semibold leading-6 my-auto",
-                   theme !== "light" && "opacity-50")
-                }
+                className={cn(
+                  "dark:text-white text-black  p-2 cursor-pointer text-base font-semibold leading-6 my-auto",
+                  theme !== "light" && "opacity-50"
+                )}
               >
                 <Sun className="h-[24px] w-[24px]" />
               </button>
               {/* Dark Mode */}
               <button
                 onClick={() => setTheme("dark")}
-                className={
-                  cn("text-white p-2  cursor-pointer text-base font-semibold leading-6 my-auto",
-                   theme !== "dark" && "opacity-50")
-                }
+                className={cn(
+                  "dark:text-white text-black  p-2  cursor-pointer text-base font-semibold leading-6 my-auto",
+                  theme !== "dark" && "opacity-50"
+                )}
               >
                 <Moon className="h-[24px] w-[24px]" />
               </button>

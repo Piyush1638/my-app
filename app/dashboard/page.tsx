@@ -66,10 +66,15 @@ const page = () => {
       </div>
       <div className="mt-8 mb-10">
         <div className="px-3">
-          <img
+          {/* <img
             loading="lazy"
             srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/e55999636249efc8b7a1fc31c345c54aa76108363b3558f1fa6311e0e9cf7a44?apiKey=851b3b1857484826921ac8967993ad9f&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/e55999636249efc8b7a1fc31c345c54aa76108363b3558f1fa6311e0e9cf7a44?apiKey=851b3b1857484826921ac8967993ad9f&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e55999636249efc8b7a1fc31c345c54aa76108363b3558f1fa6311e0e9cf7a44?apiKey=851b3b1857484826921ac8967993ad9f&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/e55999636249efc8b7a1fc31c345c54aa76108363b3558f1fa6311e0e9cf7a44?apiKey=851b3b1857484826921ac8967993ad9f&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/e55999636249efc8b7a1fc31c345c54aa76108363b3558f1fa6311e0e9cf7a44?apiKey=851b3b1857484826921ac8967993ad9f&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/e55999636249efc8b7a1fc31c345c54aa76108363b3558f1fa6311e0e9cf7a44?apiKey=851b3b1857484826921ac8967993ad9f&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/e55999636249efc8b7a1fc31c345c54aa76108363b3558f1fa6311e0e9cf7a44?apiKey=851b3b1857484826921ac8967993ad9f&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/e55999636249efc8b7a1fc31c345c54aa76108363b3558f1fa6311e0e9cf7a44?apiKey=851b3b1857484826921ac8967993ad9f&"
             className="object-contain object-center w-full aspect-[2.33]"
+          /> */}
+          <iframe src="https://www.google.com/maps/d/embed?mid=18LZ4L4OGy3yxoDS5qnBcF-LFA7iYBgg&ehbc=2E312F"  
+           frameBorder="0"
+           allowFullScreen
+            className="w-full h-[500px]"
           />
         </div>
       </div>
