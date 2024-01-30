@@ -1,7 +1,7 @@
 const MyNFT = () => {
   return (
-    <div className="flex flex-col py-3 xl:py-6 xl:px-5 rounded-lg bg-[#1D1F25] px-3">
-      <div className="text-white text-base font-bold leading-6 whitespace-nowrap">
+    <div className="flex flex-col py-3 xl:py-6 xl:px-5 rounded-lg dark:border-none border border-[#F1F1F1] dark:bg-[#1D1F25] px-3">
+      <div className="dark:text-white text-black font-bold text-base  leading-6 whitespace-nowrap">
         My NFTs
       </div>
       <div className="text-slate-500 text-sm leading-5 whitespace-nowrap mt-1">
@@ -15,7 +15,7 @@ const MyNFT = () => {
               srcSet={nft.srcSet}
               className="aspect-[1.01] object-contain object-center w-[84px] self-center"
             />
-            <p className="text-zinc-50 text-center text-xs leading-4 mt-4">
+            <p className="dark:text-[#FCFCFC] text-center text-xs leading-4 mt-4">
               {nft.name}
             </p>
           </div>

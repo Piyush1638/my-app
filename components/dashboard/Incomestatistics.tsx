@@ -3,9 +3,9 @@ import React from "react";
 const Incomestatistics = () => {
   return (
     <div>
-      <div className="bg-[#1D1E21] p-5 rounded-2xl flex flex-col gap-y-8">
+      <div className="dark:bg-[#1D1E21] bg-white p-5 rounded-2xl flex flex-col gap-y-8">
         <h2
-          className="text-2xl font-bold text-gray-200 whitespace-nowrap"
+          className="text-2xl font-bold dark:text-gray-200 text-black whitespace-nowrap"
           aria-label="Statistical Total Performance"
         >
           Income statistics
@@ -20,7 +20,7 @@ const Incomestatistics = () => {
             />
           </div>
           <div>
-            <div className="justify-center items-stretch self-center py-2 pr-9 pl-4 mt-16 text-sm font-bold leading-6 text-center whitespace-nowrap bg-lime-400 rounded-[55px] text-neutral-900 max-md:pr-5 max-md:mt-10">
+            <div className="justify-center items-stretch self-center py-2 pr-9 pl-4 mt-16 text-sm font-bold leading-6 text-center whitespace-nowrap dark:bg-lime-400 bg-black rounded-[55px] dark:text-neutral-900 text-white max-md:pr-5 max-md:mt-10">
               Select the NFT
             </div>
           </div>
@@ -28,13 +28,13 @@ const Incomestatistics = () => {
             <div>
               <div className="flex flex-col flex-1 items-stretch p-2.5 border border-solid border-[color:var(--dark-gray-b4,#282C38)]">
                 <div className="flex gap-5 justify-between items-stretch whitespace-nowrap">
-                  <div className="text-xs text-gray-500">Location</div>
-                  <div className="text-sm text-lime-400">France</div>
+                  <div className="text-xs dark:text-gray-500 text-black">Location</div>
+                  <div className="text-sm dark:text-lime-400 text-black">France</div>
                 </div>
                 <div className="shrink-0 mt-1.5 h-px bg-gray-800" />
                 <div className="flex gap-5 justify-between items-stretch mt-2">
-                  <div className="text-xs text-gray-500">Month Received</div>
-                  <div className="text-sm text-lime-400">
+                  <div className="text-xs dark:text-gray-500 text-black">Month Received</div>
+                  <div className="text-sm dark:text-lime-400 text-black">
                     <span className="text-white">$</span>115
                   </div>
                 </div>
@@ -43,15 +43,15 @@ const Incomestatistics = () => {
             <div>
               <div className="flex flex-col flex-1 items-stretch p-2.5 border border-solid border-[color:var(--dark-gray-b4,#282C38)]">
                 <div className="flex gap-5 justify-between items-stretch">
-                  <div className="text-xs text-gray-500">Interest rate</div>
-                  <div className="text-sm text-white">
-                    5<span className="text-white">%</span>
+                  <div className="text-xs dark:text-gray-500 text-black">Interest rate</div>
+                  <div className="text-sm dark:text-white text-black">
+                    5<span className="dark:text-white text-black">%</span>
                   </div>
                 </div>
                 <div className="shrink-0 mt-1.5 h-px bg-gray-800" />
                 <div className="flex gap-5 justify-between items-stretch mt-2">
-                  <div className="text-xs text-gray-500">Total Received</div>
-                  <div className="text-sm text-lime-400">
+                  <div className="text-xs dark:text-gray-500 text-black">Total Received</div>
+                  <div className="text-sm dark:text-lime-400 text-black">
                     <span className="text-white">$</span>750
                   </div>
                 </div>

@@ -2,10 +2,10 @@ import React from "react";
 
 const Income = () => {
   return (
-    <div className="items-stretch self-stretch bg-[#1D1F25] flex w-full flex-col pt-5 pb-12 px-5 rounded-xl">
+    <div className="items-stretch self-stretch dark:bg-[#1D1F25]  flex w-full flex-col pt-5 pb-12 px-5 rounded-xl h-full dark:border-none border border-[#F1F1F1]">
       <div className="justify-between items-stretch flex w-full gap-5 max-md:max-w-full max-md:flex-wrap">
         <div className="items-stretch flex flex-col">
-          <div className="text-gray-200 text-base font-bold leading-6">
+          <div className="dark:text-gray-200 text-black text-base font-bold leading-6">
             Income form this car
           </div>
           <div className="text-slate-500 text-sm leading-5 whitespace-nowrap">
@@ -34,10 +34,10 @@ const Income = () => {
       </div>
       <div className="flex items-stretch justify-between gap-1.5 mt-12 max-md:max-w-full max-md:flex-wrap max-md:mr-1 max-md:mt-10">
         <div className="flex basis-0 flex-col items-stretch text-sm text-white whitespace-nowrap text-right">
-          <div className="leading-[140%]">600</div>
-          <div className="leading-[140%] mt-6">400</div>
-          <div className="leading-[140%] mt-6">200</div>
-          <div className="leading-[140%] mt-6">0</div>
+          <div className="leading-[140%] dark:text-white text-black">600</div>
+          <div className="leading-[140%] mt-6 dark:text-white text-black">400</div>
+          <div className="leading-[140%] mt-6 dark:text-white text-black">200</div>
+          <div className="leading-[140%] mt-6 dark:text-white text-black">0</div>
         </div>
         <div className="">
           <img
@@ -48,15 +48,15 @@ const Income = () => {
         </div>
       </div>
       <div className="self-center flex w-full max-w-[735px] items-stretch justify-between gap-5 text-sm text-white whitespace-nowrap text-center mt-4 max-md:max-w-full max-md:flex-wrap">
-        <div className="leading-[140%] grow">Apr</div>
-        <div className="leading-[140%]">May</div>
-        <div className="leading-[140%]">Jun</div>
-        <div className="leading-[140%]">Jul</div>
-        <div className="leading-[140%]">Aug</div>
-        <div className="leading-[140%]">Sep</div>
-        <div className="leading-[140%]">Oct</div>
-        <div className="leading-[140%]">Nov</div>
-        <div className="leading-[140%] grow">Dec</div>
+        <div className="leading-[140%] grow dark:text-white text-black">Apr</div>
+        <div className="leading-[140%] dark:text-white text-black">May</div>
+        <div className="leading-[140%] dark:text-white text-black">Jun</div>
+        <div className="leading-[140%] dark:text-white text-black">Jul</div>
+        <div className="leading-[140%] dark:text-white text-black">Aug</div>
+        <div className="leading-[140%] dark:text-white text-black">Sep</div>
+        <div className="leading-[140%] dark:text-white text-black">Oct</div>
+        <div className="leading-[140%] dark:text-white text-black">Nov</div>
+        <div className="leading-[140%] grow dark:text-white text-black">Dec</div>
       </div>
     </div>
   );
