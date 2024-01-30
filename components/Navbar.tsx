@@ -6,17 +6,22 @@ import { MdOutlineClose } from "react-icons/md";
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const { setTheme,theme } = useTheme();
+  const pathname = usePathname();
 
   // useEffect(() => {
   //   setTheme("system");
   // }, []);
 
   return (
-    <div className="w-full bg-primary pe-2  mf:px-4 py-4 fixed top-0 z-50">
+    <div className={
+      cn("w-full bg-primary pe-2  mf:px-4 py-4 fixed top-0 z-50",
+       pathname === "/dashboard" && "bg-[#141518]")
+    }>
       <div className="flex items-stretch justify-between gap-5 max-md:flex-wrap">
         <div className="flex items-center sm:items-stretch justify-between gap-3 sm:gap-5 px-5">
           {!openMenu ? (
@@ -51,13 +56,21 @@ const Navbar = () => {
           <div className="items-stretch flex justify-between gap-5 px-5">
             <Link
               href="/cardetail"
-              className="text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5"
+              className={
+                cn(
+                  pathname === "/cardetail" || pathname ===  "/" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 cursor-pointer text-base font-semibold leading-6 my-auto"
+                )
+              }
             >
               Mint NFT
             </Link>
             <Link
               href="/dashboard"
-              className="text-zinc-500 cursor-pointer text-base font-semibold leading-6 my-auto"
+              className={
+                cn(
+                  pathname === "/dashboard" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[color:var(--Dark-Stroke,#424242)] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 cursor-pointer text-base font-semibold leading-6 my-auto"
+                )
+              }
             >
               Dashboard
             </Link>
@@ -69,7 +82,7 @@ const Navbar = () => {
                 onClick={() => setTheme("light")}
                 className={
                   cn("text-white  p-2 cursor-pointer text-base font-semibold leading-6 my-auto",
-                   theme !== "light" && "opacity-70")
+                   theme !== "light" && "opacity-50")
                 }
               >
                 <Sun className="h-[24px] w-[24px]" />
@@ -79,7 +92,7 @@ const Navbar = () => {
                 onClick={() => setTheme("dark")}
                 className={
                   cn("text-white p-2  cursor-pointer text-base font-semibold leading-6 my-auto",
-                   theme !== "dark" && "opacity-70")
+                   theme !== "dark" && "opacity-50")
                 }
               >
                 <Moon className="h-[24px] w-[24px]" />
@@ -117,7 +130,7 @@ const Navbar = () => {
 
         {/* Mobile Navbar */}
 
-        <div className="mf:hidden justify-between items-center bg-zinc-50 flex gap-1 mf:px-6 px-2 py-2 rounded-[51px] ">
+        <div className="mf:hidden justify-between items-center h-auto bg-zinc-50 flex gap-1 mf:px-6 px-2 py-2 rounded-[51px] ">
           <img
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1550055fbae609e16280a87fd2fbd1f6cb68ac608377c54f7130fc7da0b651f?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"

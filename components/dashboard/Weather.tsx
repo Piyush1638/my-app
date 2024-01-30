@@ -1,8 +1,10 @@
+import { cn } from "@/lib/utils";
 import React from "react";
+import { Moon, Sun } from "lucide-react";
 
 const Weather = () => {
   return (
-    <div className="items-stretch bg-neutral-800 flex w-auto lg:max-w-[421px] flex-col p-5 rounded-xl">
+    <div className="items-stretch bg-[#1D1F25] flex w-full flex-col p-5 rounded-xl">
       <div className="justify-between items-stretch flex gap-0">
         <div className="text-white text-base font-bold leading-6 grow">
           Weather
@@ -22,37 +24,38 @@ const Weather = () => {
         <WeatherCondition
           time="11 AM"
           temp="37"
-          src="\assets\dashboard\sunmoon.png"
+          // src="\assets\dashboard\sunmoon.png"
         />
         <WeatherCondition
           time="12 AM"
           temp="37"
-          src="\assets\dashboard\sunmoon.png"
+          // src="\assets\dashboard\sunmoon.png"
+          active={true}
         />
         <WeatherCondition
           time="1 AM"
           temp="37"
-          src="\assets\dashboard\sunmoon.png"
+          // src="\assets\dashboard\sunmoon.png"
         />
         <WeatherCondition
           time="12 AM"
           temp="37"
-          src="\assets\dashboard\sunmoon.png"
+          // src="\assets\dashboard\sunmoon.png"
         />
         <WeatherCondition
           time="13 AM"
           temp="37"
-          src="\assets\dashboard\sunmoon.png"
+          // src="\assets\dashboard\sunmoon.png"
         />
         <WeatherCondition
           time="14 AM"
           temp="37"
-          src="\assets\dashboard\sunmoon.png"
+          // src="\assets\dashboard\sunmoon.png"
         />
         <WeatherCondition
           time="1 AM"
           temp="37"
-          src="\assets\dashboard\sunmoon.png"
+          // src="\assets\dashboard\sunmoon.png"
         />
       </div>
     </div>
@@ -63,21 +66,31 @@ export default Weather;
 
 const WeatherCondition = ({
   time,
-  src,
+  // src,
   temp,
+  active,
 }: {
   time: string;
-  src: string;
+  // src: string;
   temp: string;
+  active?: boolean;
 }) => (
-  <div className="items-stretch border flex flex-col py-2 rounded-[555px] border-solid border-black border-opacity-10 flex-1">
-    <div className="leading-[140%] text-center">{time}</div>
-    <img
+  <div
+    className={cn(
+      "items-center max-w-fit px-1 border flex flex-col py-2 rounded-full border-solid border-black border-opacity-10 flex-1",
+      active ? "bg-white text-black" : " text-white"
+    )}
+  >
+    <div className=" text-center">{time}</div>
+    {/* <img
       loading="lazy"
       src={src}
       className="aspect-[1.35] object-contain object-center w-[30px] sm:w-[43px] self-center mt-1"
-    />
-    <div className="font-bold leading-[140%] mt-1 ">
+    /> */}
+    <div className="w-fit flex justify-center">
+      <Sun size={24} className="self-center mt-1" />
+    </div>
+    <div className="font-bold  mt-1 ">
       <p className="text-center md:text-base text-xs">{temp}</p>
     </div>
   </div>

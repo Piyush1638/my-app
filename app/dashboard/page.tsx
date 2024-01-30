@@ -10,31 +10,41 @@ import React from "react";
 
 const page = () => {
   return (
-    <section className="min-h-screen overflow-x-hidden mf:p-10 px-3 py-10 bg-primary">
-        <div className="flex md:items-center lg:flex-row flex-col mt-12">
-            <div className="leftDiv flex-[2] flex-col flex">
-                <div className="leftUpper flex flex-col lg:items-center lg:flex-row gap-2">
-                    <div className="leftUpperLeft">
-                        <RentedCar/>
-                    </div>
-                    <div className="leftUpperRight flex flex-col gap-4">
-                        <NameOfNft/>
-                        <Weather/>
-                        <Services/>
-                    </div>
-                </div>
-                <div className="leftLower">
-                    <Income/>
-                </div>
+    <section className="min-h-screen overflow-x-hidden mf:p-10 px-3 py-10 bg-[#141518]">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6 mt-14">
+        <div className="col-span-2 flex flex-col gap-6">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
+            <div>
+              <RentedCar />
             </div>
-            <div className="rightDiv flex-[1] flex flex-col gap-6">
-                <CarDetail/>
-                <MyNFT/>
+            <div className="flex flex-col h-full justify-between gap-6">
+              <div>
+                <NameOfNft />
+              </div>
+              <div>
+                <Weather />
+              </div>
+              <div>
+                <Services />
+              </div>
             </div>
+          </div>
+          <div>
+            <Income />
+          </div>
         </div>
-        <div className="dataTable mt-20 px-3">
-             <HistoryTable/>
+        <div className="flex flex-col gap-6">
+          <div>
+            <CarDetail />
+          </div>
+          <div>
+            <MyNFT />
+          </div>
         </div>
+      </div>
+      <div className="mt-8">
+        <HistoryTable />
+      </div>
     </section>
   );
 };

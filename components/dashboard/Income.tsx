@@ -2,7 +2,7 @@ import React from "react";
 
 const Income = () => {
   return (
-    <div className="items-stretch self-stretch bg-neutral-800 flex max-w-[863px] flex-col pt-5 pb-12 px-5 rounded-xl">
+    <div className="items-stretch self-stretch bg-[#1D1F25] flex w-full flex-col pt-5 pb-12 px-5 rounded-xl">
       <div className="justify-between items-stretch flex w-full gap-5 max-md:max-w-full max-md:flex-wrap">
         <div className="items-stretch flex flex-col">
           <div className="text-gray-200 text-base font-bold leading-6">

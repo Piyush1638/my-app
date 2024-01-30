@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="bg-zinc-900 rounded-lg">
+    <div className="bg-[#1D1F25] rounded-lg">
       <div className="grid grid-cols-3">
         <Service src="\assets\dashboard\www.png" name="Hulk Rent"/>
         <Service src="\assets\dashboard\garage.png" name="Garage"/>
@@ -21,7 +21,7 @@ const Services = () => {
 export default Services;
 
 const Service = ({src, name}:{src:string, name:string}) => (
-  <div className="justify-center items-stretch self-stretch bg-zinc-900 flex max-w-[139px] flex-col px-9 py-4 rounded-xl cursor-pointer">
+  <div className="justify-center items-stretch self-stretch bg-[#1D1F25] flex max-w-[139px] flex-col px-9 py-4 rounded-xl cursor-pointer">
     <img
       loading="lazy"
       src={src}

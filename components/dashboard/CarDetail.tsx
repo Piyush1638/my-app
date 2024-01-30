@@ -2,7 +2,7 @@ import React from 'react'
 
 const CarDetail = () => {
   return (
-    <div className="items-stretch bg-zinc-900 flex w-full flex-col py-px rounded-xl relative my-10 lg:mt-0">
+    <div className="items-stretch bg-zinc-900 flex w-full flex-col py-px xl:px-5 xl:py-6 rounded-xl relative my-10 lg:mt-0">
         <div className="flex flex-col px-3 py-2 -mb-16">
           <p className='font-semibold text-slate-50'>Car Detail</p>
           <p className='text-gray-400'>View More Detail</p>

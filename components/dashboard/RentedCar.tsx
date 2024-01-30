@@ -2,13 +2,13 @@ import React from "react";
 
 const RentedCar = () => {
   return (
-    <form className="items-stretch self-stretch bg-zinc-900 flex w-auto  flex-col p-5 rounded-xl">
+    <form className="items-stretch self-stretch bg-[#1D1F25] flex w-auto  flex-col p-5 rounded-xl">
       <header className="justify-between items-stretch flex w-full gap-5">
         <div className="justify-between items-stretch flex gap-1 my-auto">
           <div className="text-white text-base font-bold leading-6 grow whitespace-nowrap">
             Rented car
           </div>
-          <div className="flex w-3 shrink-0 h-3 flex-col my-auto rounded-full" />
+          <div className="flex w-3 shrink-0 h-3 bg-green-400 ml-1 my-auto rounded-full" />
         </div>
         <div className="items-stretch flex gap-2">
           <Services href="#" src="/assets/dashboard/gas-station.png"/>
