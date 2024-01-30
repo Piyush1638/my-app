@@ -58,7 +58,7 @@ const Navbar = () => {
               href="/cardetail"
               className={
                 cn(
-                  pathname === "/cardetail" || pathname ===  "/" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch border border-[#424242] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
+                  pathname === "/cardetail" || pathname ===  "/" ? "text-zinc-50 text-base font-semibold leading-6 whitespace-nowrap justify-center items-stretch bg-black dark:bg-transparent border border-[#424242] px-6 py-3 rounded-[51px] border-solid max-md:px-5" : "text-zinc-500 px-6 py-3 cursor-pointer text-base font-semibold leading-6 my-auto"
                 )
               }
             >
@@ -109,13 +109,13 @@ const Navbar = () => {
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ac508b25fb9e98a12ab37b37daf72a0695b4d7590548f786316e59d9fcdd823?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"
                 className="aspect-square object-contain object-center w-11 overflow-hidden self-stretch shrink-0 max-w-full my-auto"
               />
-              <div className="justify-between items-stretch bg-zinc-50 self-stretch flex gap-2 px-6 py-3 rounded-[51px] max-md:px-5">
+              <div className="justify-between items-stretch bg-black dark:bg-zinc-50 self-stretch flex gap-2 px-6 py-3 rounded-[51px] max-md:px-5">
                 <img
                   loading="lazy"
                   src="https://cdn.builder.io/api/v1/image/assets/TEMP/a1550055fbae609e16280a87fd2fbd1f6cb68ac608377c54f7130fc7da0b651f?apiKey=386f6655ee2e4fd59eb38f1897c7f7b2&"
                   className="aspect-square object-contain object-center w-6 overflow-hidden shrink-0 max-w-full"
                 />
-                <button className="text-neutral-900 text-base font-medium leading-6 grow whitespace-nowrap self-start">
+                <button className="text-white dark:text-neutral-900 text-base font-medium leading-6 grow whitespace-nowrap self-start">
                   Connect Wallet
                 </button>
               </div>
