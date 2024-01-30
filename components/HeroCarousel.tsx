@@ -52,10 +52,10 @@ export function HeroCarousel() {
     }
 
     setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
+    setCurrent(api.selectedScrollSnap() + 2);
 
     api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
+      setCurrent(api.selectedScrollSnap() + 2);
     });
   }, [api]);
 
@@ -67,12 +67,12 @@ export function HeroCarousel() {
     <Carousel
       opts={{
         align: "start",
-        startIndex: 2,
-        breakpoints: {
-          '(min-width: 768px)':{
-          startIndex: 0,
-          }  
-        },
+        // startIndex: 2,
+        // breakpoints: {
+        //   '(min-width: 768px)':{
+        //   startIndex: 0,
+        //   }  
+        // },
       }}
       setApi={setApi}
       

@@ -33,12 +33,12 @@ const CarCarousel = () => {
         {/* <CarouselPrevious className="bg-[#424242] hover:bg-primary" /> */}
         {/* <CarouselNext className="bg-[#424242]" /> */}
         <div className="absolute left-[45%] -bottom-16">
-          <div className="flex items-center justify-between bg-[#2a2b2d] px-4 py-2 rounded-full gap-3">
+          <div className="flex items-center justify-between bg-white dark:bg-[#2a2b2d] px-4 py-2 rounded-full gap-3">
             <CustomPrevious>
-              <MdKeyboardArrowLeft className="text-2xl text-slate-50" />
+              <MdKeyboardArrowLeft className="text-2xl text-black dark:text-slate-50" />
             </CustomPrevious>
             <CustomNext>
-              <MdKeyboardArrowRight className="text-2xl text-slate-50" />
+              <MdKeyboardArrowRight className="text-2xl text-black dark:text-slate-50" />
             </CustomNext>
           </div>
         </div>
