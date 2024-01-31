@@ -149,11 +149,12 @@ const SuccessfullyInvestedDiv = () => (
         >
           <input
             type="checkbox"
-            className="before:content[''] peer relative h-20 w-20 cursor-pointer appearance-none rounded-full border-2 border-slate-50 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-slate-50 checked:bg-lime-400"
+            className="before:content[''] peer relative h-20 w-20 cursor-pointer appearance-none rounded-full border-2 border-slate-50 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-slate-50 dark:checked:bg-lime-400 checked:bg-black"
             id="checkbox"
             checked
+            disabled
           />
-          <span className="absolute text-black transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
+          <span className="absolute text-white dark:text-black transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-10 w-10"
@@ -171,10 +172,10 @@ const SuccessfullyInvestedDiv = () => (
           </span>
         </label>
       </div>
-      <h1 className="text-3xl text-center font-semibold text-lime-400 my-4">
-        Successfully Invested
+      <h1 className="text-3xl text-center font-semibold text-black dark:text-lime-400 my-4">
+        Successfully Invested 
       </h1>
-      <p className="text-center text-slate-50">You Have Just Recieved Your NFT In Your Wallet On The Solana Network. You Can Sell Your NFT At Any Time On The Secondary market.</p>
+      <p className="text-center text-[#5B6169] dark:text-slate-50">You Have Just Recieved Your NFT In Your Wallet On The Solana Network. You Can Sell Your NFT At Any Time On The Secondary market.</p>
     </div>
   </div>
 );

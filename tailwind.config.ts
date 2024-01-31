@@ -38,7 +38,8 @@ const config = {
         "navlinks": "#2a2b2d",
       },
       screens:{
-        "mf": "1200px"
+        "mf": "1200px",
+        "xsm": "380px",
       }
     },
   },

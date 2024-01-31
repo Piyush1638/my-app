@@ -5,7 +5,7 @@ const Incomestatistics = () => {
     <div>
       <div className="dark:bg-[#1D1E21] bg-white p-5 rounded-2xl flex flex-col gap-y-8">
         <h2
-          className="text-2xl font-bold dark:text-gray-200 text-black whitespace-nowrap"
+          className="text-2xl max-md:text-lg font-bold dark:text-gray-200 text-black whitespace-nowrap"
           aria-label="Statistical Total Performance"
         >
           Income statistics
